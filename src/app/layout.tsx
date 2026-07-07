@@ -1,6 +1,7 @@
 import HomePage from "@/components/HomePage";
 import type { Metadata } from "next";
 import { DM_Sans, Instrument_Serif } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const dmSans = DM_Sans({
@@ -30,6 +31,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${dmSans.variable} ${instrumentSerif.variable}`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
