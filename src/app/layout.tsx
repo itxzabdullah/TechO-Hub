@@ -1,4 +1,3 @@
-import HomePage from "@/components/HomePage";
 import type { Metadata } from "next";
 import { DM_Sans, Instrument_Serif } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
