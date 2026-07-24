@@ -13,7 +13,7 @@ A Next.js app for discovering tech events in Karachi, Pakistan — meetups, hack
 
 ## Features
 
-- Live event feed from **Eventbrite** and **Meetup** (when API keys are configured)
+- Live event feed from **Eventbrite** and **Meetup** 
 - Fallback to curated sample events in `src/data/events.ts` if APIs are unavailable
 - Search plus category, time, and price filters
 - Grid and list views
