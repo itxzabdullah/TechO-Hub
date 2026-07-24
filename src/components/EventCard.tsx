@@ -1,4 +1,4 @@
-import { CATEGORY_LABELS } from "@/data/events";
+import { EVENTBRITE_KARACHI_URL, CATEGORY_LABELS } from "@/data/events";
 import { formatEventDate } from "@/lib/events";
 import type { TechEvent, ViewMode } from "@/types/event";
 
@@ -10,10 +10,18 @@ interface EventCardProps {
 export default function EventCard({ event, view }: EventCardProps) {
   const { day, month, weekday } = formatEventDate(event.date);
   const priceLabel = event.price === "free" ? "Free" : "Paid";
+  const href =
+    event.url && event.url !== "#" ? event.url : EVENTBRITE_KARACHI_URL;
+  const isExternal = /^https?:\/\//i.test(href);
 
   return (
-    <article
+    <a
       className={`event-card${view === "list" ? " event-card--list" : ""}`}
+      href={href}
+      aria-label={`View ${event.title}`}
+      {...(isExternal
+        ? { target: "_blank", rel: "noopener noreferrer" }
+        : {})}
     >
       <div className="event-date">
         <span className="event-month">{month}</span>
@@ -31,9 +39,7 @@ export default function EventCard({ event, view }: EventCardProps) {
           </span>
         </div>
 
-        <h3 className="event-title">
-          <a href={event.url}>{event.title}</a>
-        </h3>
+        <h3 className="event-title">{event.title}</h3>
 
         <p className="event-desc">{event.description}</p>
 
@@ -91,9 +97,9 @@ export default function EventCard({ event, view }: EventCardProps) {
         </div>
       </div>
 
-      <a className="event-cta" href={event.url} aria-label={`View ${event.title}`}>
+      <span className="event-cta" aria-hidden="true">
         →
-      </a>
-    </article>
+      </span>
+    </a>
   );
 }

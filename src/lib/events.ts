@@ -116,3 +116,7 @@ export const DEFAULT_FILTERS: EventFilters = {
   time: "all",
   price: "all",
 };
+
+export function getEventKey(event: TechEvent): string {
+  return `${event.url || "local"}-${event.date}-${event.title}`;
+}
