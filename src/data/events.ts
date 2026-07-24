@@ -1,5 +1,8 @@
 import type { TechEvent } from "@/types/event";
 
+export const EVENTBRITE_KARACHI_URL =
+  "https://www.eventbrite.com/d/pakistan--karachi/events/";
+
 export const EVENTS: TechEvent[] = [
   {
     id: 1,
@@ -13,7 +16,7 @@ export const EVENTS: TechEvent[] = [
     tags: ["Android", "Mobile", "Google"],
     description:
       "Hands-on Android development workshop covering Jetpack Compose and Material Design 3.",
-    url: "#",
+    url: EVENTBRITE_KARACHI_URL,
   },
   {
     id: 2,
@@ -27,7 +30,7 @@ export const EVENTS: TechEvent[] = [
     tags: ["AI", "Machine Learning", "LLM"],
     description:
       "Lightning talks on deploying LLMs locally and in the cloud, with demos from local startups.",
-    url: "#",
+    url: EVENTBRITE_KARACHI_URL,
   },
   {
     id: 3,
@@ -41,7 +44,7 @@ export const EVENTS: TechEvent[] = [
     tags: ["Google", "Cloud", "Web"],
     description:
       "Pakistan's largest community-led developer conference with 20+ sessions and workshops.",
-    url: "#",
+    url: EVENTBRITE_KARACHI_URL,
   },
   {
     id: 4,
@@ -55,7 +58,7 @@ export const EVENTS: TechEvent[] = [
     tags: ["Hackathon", "Startups", "Fintech"],
     description:
       "48-hour hackathon focused on fintech and financial inclusion solutions for Pakistan.",
-    url: "#",
+    url: EVENTBRITE_KARACHI_URL,
   },
   {
     id: 5,
@@ -69,7 +72,7 @@ export const EVENTS: TechEvent[] = [
     tags: ["Industry", "Networking", "Software"],
     description:
       "Connect with IT leaders, CEOs, and hiring managers from Pakistan's software industry.",
-    url: "#",
+    url: EVENTBRITE_KARACHI_URL,
   },
   {
     id: 6,
@@ -83,7 +86,7 @@ export const EVENTS: TechEvent[] = [
     tags: ["React", "Next.js", "Frontend"],
     description:
       "Monthly meetup exploring React Server Components, streaming, and performance patterns.",
-    url: "#",
+    url: EVENTBRITE_KARACHI_URL,
   },
   {
     id: 7,
@@ -97,7 +100,7 @@ export const EVENTS: TechEvent[] = [
     tags: ["AWS", "Cloud", "Security"],
     description:
       "Workshop on IAM best practices, VPC security, and incident response on AWS.",
-    url: "#",
+    url: EVENTBRITE_KARACHI_URL,
   },
   {
     id: 8,
@@ -111,7 +114,7 @@ export const EVENTS: TechEvent[] = [
     tags: ["University", "Robotics", "CS"],
     description:
       "Annual tech fest featuring project exhibitions, coding competitions, and career fair.",
-    url: "#",
+    url: EVENTBRITE_KARACHI_URL,
   },
   {
     id: 9,
@@ -125,7 +128,7 @@ export const EVENTS: TechEvent[] = [
     tags: ["Diversity", "Leadership", "Careers"],
     description:
       "Panel discussion with women leaders in Pakistan's tech industry, followed by networking.",
-    url: "#",
+    url: EVENTBRITE_KARACHI_URL,
   },
   {
     id: 10,
@@ -139,7 +142,7 @@ export const EVENTS: TechEvent[] = [
     tags: ["Blockchain", "Web3", "Crypto"],
     description:
       "Full-day summit on blockchain adoption, DeFi, and regulatory landscape in Pakistan.",
-    url: "#",
+    url: EVENTBRITE_KARACHI_URL,
   },
   {
     id: 11,
@@ -153,7 +156,7 @@ export const EVENTS: TechEvent[] = [
     tags: ["Python", "Data", "ETL"],
     description:
       "Introductory workshop on building data pipelines with Python, Airflow, and dbt.",
-    url: "#",
+    url: EVENTBRITE_KARACHI_URL,
   },
   {
     id: 12,
@@ -167,7 +170,7 @@ export const EVENTS: TechEvent[] = [
     tags: ["Startups", "Founders", "VC"],
     description:
       "Fireside chat with a Karachi-based unicorn founder on scaling from zero to Series B.",
-    url: "#",
+    url: EVENTBRITE_KARACHI_URL,
   },
 ];
 
