@@ -23,9 +23,9 @@ A Next.js app for discovering tech events in Karachi, Pakistan — meetups, hack
 
 ## Screenshots
 
-| Home & Live Feed | Search & Filters | Event Details |
-| :---: | :---: | :---: |
-| ![Home](./screenshots/home.png) | ![Filters](./screenshots/filters.png) | ![Modal](./screenshots/modal.png) |
+| Home & Live Feed | Search & Filters | Event Details | Event Submission |
+| :---: | :---: | :---: | :---: |
+| ![Home](./screenshots/home.JPG) | ![Filters](./screenshots/filters.JPG) | ![Modal](./screenshots/modal.JPG) | ![Submit](./screenshots/submit.JPG) |
 
 ## Getting started
 
