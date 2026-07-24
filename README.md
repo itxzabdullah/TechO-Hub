@@ -1,5 +1,7 @@
 # Karachi Tech Events
 
+> **Live at:** [techohub.vercel.app](https://techohub.vercel.app)
+
 A Next.js app for discovering tech events in Karachi, Pakistan — meetups, hackathons, workshops, conferences, and networking nights.
 
 ## Tech stack
@@ -18,6 +20,12 @@ A Next.js app for discovering tech events in Karachi, Pakistan — meetups, hack
 - `/events` page with the full aggregated listing
 - In-memory caching with optional Vercel Cron refresh (`vercel.json`)
 - Event submission form (demo UI only)
+
+## Screenshots
+
+| Home & Live Feed | Search & Filters | Event Details |
+| :---: | :---: | :---: |
+| ![Home](./screenshots/home.png) | ![Filters](./screenshots/filters.png) | ![Modal](./screenshots/modal.png) |
 
 ## Getting started
 
